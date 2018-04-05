@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>JS Title</title>
+  <script type="text/javascript">
+    let blist = ["end of the semester", "no research", "Disen gets better"];
+    console.log(blist.length);
+
+    blist.push("get a beer");
+    console.log(blist.length);
+
+    console.log(blist.length);
+    console.log(blist);
+
+    // for loop
+
+    for (let i = 0; i < blist.length; i++) {
+    console.log(blist[i]);
+    }
+    let balance = 1000;
+     interest = 0.03;
+    years = 0;
+    while(balance < 1000000) {
+      balance = balance + balance * interest;
+      years +=1;
+    }
+console.log("in " + years + " years, bro.");
+
+
+// let grade = 75;
+function grade_calc (g) {
+
+
+if (g >= 90) {
+  return "A";
+
+} else if (g >= 80) {
+return ("B");
+} else if (g >= 70) {
+  return "C"; }
+ else {
+  return "D"; }
+}
+
+console.log("you got " + grade_calc(90));
+console.log("you got " + grade_calc(69));
+console.log("you got " + grade_calc(87));
+
+  </script>
+</head>
+
+<body>
+  <h1>JS Exercise, See Console for Outputs</h1>
+</body>
+
+</html>
